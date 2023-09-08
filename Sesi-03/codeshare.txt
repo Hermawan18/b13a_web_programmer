@@ -1,0 +1,52 @@
+
+
+catatan pembelajaran
+----
+
+
+external : buat file style.css
+internal : di letakan di heading 
+			<head>
+      		//untuk css
+      </head>
+inline css : di letakan di element
+	<h1 style="background-color: blue; color: red; padding-left: 50px;">Belajar CSS</h1>
+  
+
+email student : (blm teregistrasi ke github) 
+di daftarkan github student > membutuhkan KTM > valid until date (ditambahkan)
+https://education.github.com/benefits?type=student
+
+jika kita sudah pnya github > email student di tambah (secondary email)
+
+------------------------------------------------------------------------
+jika sudah ada github 
+
+change credentials
+git config --global user.name ""
+git config --global user.email "@gmail.com"
+git config --global credential.username ""
+
+// yang ini untuk kelanjutan nya
+git add .
+git commit -m "update data"
+git push
+
+repository : b13a_web_programmer
+b13a_web_programmer :
+	> sesi-01 > beserta file/koding nya
+  > sesi-02 > beserta file/koding nya
+  > dst
+  
+nama lengkap | link github | link repository
+Rendi Mario | github.com/rndmr666 | github.com/rndmrr666/b13a_web_progammer_basic
+arif setiawan | github.com/arifswn | github.com/arifswn/b13a_web_programmer
+Madyan Eka Septian | github.com/madyanes | https://github.com/madyanes/b13a_web_programmer 
+Inas Lathifah | github.com/inaslathifah | https://github.com/inaslathifah/b13a_web_programmer 
+Syifa Arizallu Diskapama | https://github.com/diskapama | 
+I Dewa Gede Rama Satya | https://github.com/dewarama-satya | https://github.com/dewarama-satya/b13a_web_programmer
+Hilmi Faturahman Akbar | https://github.com/hilmifaturahman | https://github.com/hilmifaturahman/b13a_web_programmer
+Muhammad Ramdhani Nugraha | github.com/ramdhani2105 | github.com/ramdhani2105/b13a_web_programming
+Siska Putra Tri Gumilang | https://github.com/SPutraTG | https://github.com/SPutraTG/b13a_web_programmer
+Hermawan Tri Yulianto | github.com/Hermawan18 | https://github.com/Hermawan18/b13a_web_programmer.git
+quraisyi | https://github.com/quraisyi |https://github.com/quraisyi/b13a_web_programmer

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hermawann Tri Yulianto</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: gray;
+      }
+      .circle {
+        position: absolute;
+        left: 5px;
+        top: 5px;
+        width: 20px;
+        height: 20px;
+        background-color: grey;
+        border-radius: 50%;
+        box-shadow: inset 1px 1px 5px 0px black;
+      }
+      .container {
+        max-width: 500px;
+        margin: auto;
+        text-align: center;
+        border-radius: 10px;
+        padding: 15px;
+        box-sizing: border-box;
+      }
+
+      /* Section name */
+      .name {
+        font-size: 20px;
+        color: white;
+        text-shadow: 3px 3px 5px black;
+      }
+
+      /* Section social media */
+      .social-media,
+      .profile,
+      .technical-skill,
+      .education,
+      .contact-me {
+        position: relative;
+        background-color: white;
+        box-sizing: border-box;
+        border-radius: 14px;
+        margin: 15px;
+        padding: 5px;
+        box-shadow: 2px 2px 5px 0px black;
+      }
+      .social-media a {
+        display: inline-block;
+        text-decoration: none;
+        padding: 10px;
+        margin-left: 4px;
+        margin-bottom: 4px;
+        border-radius: 12px;
+        box-shadow: 3px 3px 5px 0 black;
+      }
+      .social-media #facebook:hover {
+        background-color: rgb(62, 62, 255);
+      }
+      .social-media #instagram:hover {
+        background-color: rgb(255, 61, 223);
+      }
+      .social-media a:active {
+        position: relative;
+        top: 3px;
+        box-shadow: none;
+      }
+      #facebook {
+        background-color: blue;
+        color: white;
+      }
+      #instagram {
+        background-color: rgb(252, 18, 213);
+        color: white;
+      }
+
+      /* Section technical skill */
+      li {
+        width: 50%;
+        margin: auto;
+        /* background-color: blue; */
+        list-style-position: inside;
+        text-align: left;
+      }
+
+      /* Section contact me */
+      input,
+      textarea {
+        box-sizing: border-box;
+        width: 250px;
+        border-radius: 5px;
+        text-align: center;
+      }
+      input {
+        padding: 5px 0px;
+      }
+      textarea {
+        height: 50px;
+        margin-bottom: 3px;
+      }
+      .email {
+        margin-bottom: 10px;
+      }
+      .contact-me form button {
+        width: 250px;
+        background-color: rgb(0, 148, 0);
+        color: white;
+        padding: 5px;
+        border-radius: 5px;
+      }
+      .contact-me form button:hover {
+        background-color: rgb(0, 119, 0);
+      }
+      .contact-me form button:active {
+        background-color: rgb(0, 85, 0);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="name">
+        <h1>Hermawan Tri Yulianto</h1>
+      </div>
+
+      <div class="social-media">
+        <div class="circle"></div>
+        <h2>Social Media</h2>
+        <a href="https://web.facebook.com/profile.php?id=100007669930228" id="facebook">Facebook</a>
+        <a href="https://www.instagram.com/hermawan18.hty/" id="instagram">Instagram</a>
+      </div>
+
+      <div class="profile">
+        <div class="circle"></div>
+        <h2>Profile</h2>
+        <p>Dengan pengalaman 5 tahun diritel, Saya adalah orang yang berkomitmen dilingkungan kerja dan memberikan pelayanan terbaik buat customer.</p>
+      </div>
+
+      <div class="technical-skill">
+        <div class="circle"></div>
+        <h2>Technical Skill</h2>
+        <ol>
+          <li>Microsoft Word</li>
+          <li>Microsoft Excel</li>
+          <li>Social Media</li>
+        </ol>
+      </div>
+
+      <div class="education">
+        <div class="circle"></div>
+        <h2>Education</h2>
+        <ul>
+          <li>SDN Kalicilik</li>
+          <li>SMPN Sukosewu</li>
+          <li>SMKN Temayang</li>
+        </ul>
+      </div>
+
+      <div class="contact-me">
+        <div class="circle"></div>
+        <h2>Contact Me</h2>
+        <form action="#">
+          <div class="email">
+            <label for="email">Email</label><br />
+            <input type="email" name="email" id="email" placeholder="Masukkan email" />
+          </div>
+          <div class="question">
+            <label for="question">Question</label><br />
+            <textarea name="question" id="question" required></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

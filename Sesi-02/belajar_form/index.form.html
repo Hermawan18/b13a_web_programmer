@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="#">
+      <h1>Formulir Pendaftaran</h1>
+      <label for="name">Nama Saya</label>
+      <input type="text" name="name" id="name" placeholder="Masukkan nama Anda" required /><br>
+      <label for="gender">Jenis Kelamin</label>
+      <select name="gender" id="gender" required>
+        <option value="kosong">Pilih</option>
+        <option value="laki-laki">Laki-laki</option>
+        <option value="perempuan">Perempuan</option>
+      </select><br>
+      <label for="date">Tanggal Lahir</label>
+      <input type="date" name="date" id="date" required><br>
+      <label for="alamat">Alamat</label>
+      <textarea name="alamat" id="alamat" required></textarea><br>
+      <label for="kota">Kota</label>
+      <select name="kota" id="kota">
+        <option value="pilih">Pilih</option>
+        <option value="bojonegoro">Bojonegoro</option>
+        <option value="bandung">Bandung</option>
+        <option value="jakarta">Jakarta</option>
+      </select><br>
+      <input type="submit" value="Kirimkan Data">
+    </form>
+  </body>
+</html>
