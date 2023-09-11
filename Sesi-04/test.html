@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luas dan Keliling Lingkaran</title>
+</head>
+<body>
+  <div id="luas"></div>
+  <div id="keliling"></div>
+
+  <script>
+    var display = document.getElementById('luas');
+    var display2 = document.getElementById('keliling');
+    var r = 5;
+    var p = 3.14;
+
+    // Luas lingkaran
+    var luas = p * r * r;
+    display.innerHTML = "<p>Luas lingkaran : " + luas.toFixed(1) + " cm</p>"
+
+    // Keliling lingkaran
+    var keliling = 2 * p * r;
+    display2.innerHTML = "<p>Keliling lingkaran : " + keliling.toFixed(1) + " cm</p>"
+
+  </script>
+</body>
+</html>
