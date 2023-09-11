@@ -1,28 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Luas dan Keliling Lingkaran</title>
-</head>
-<body>
-  <div id="luas"></div>
-  <div id="keliling"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luas dan Keliling Lingkaran</title>
+  </head>
+  <body>
+    <div id="luas"></div>
+    <div id="keliling"></div>
 
-  <script>
-    var display = document.getElementById('luas');
-    var display2 = document.getElementById('keliling');
-    var r = 5;
-    var p = 3.14;
+<!-- 
+Luas lingkaran 
+flow:
+pi dikali jari" pangkat 2
 
-    // Luas lingkaran
-    var luas = p * r * r;
-    display.innerHTML = "<p>Luas lingkaran : " + luas.toFixed(1) + " cm</p>"
+pseudocode:
+1. deklarasikan pi assign 3.14
+2. deklarasikan jari" assign 5
+3. deklarasikan result assign pengkalian dari pi dan jari"
 
-    // Keliling lingkaran
-    var keliling = 2 * p * r;
-    display2.innerHTML = "<p>Keliling lingkaran : " + keliling.toFixed(1) + " cm</p>"
+Keliling lingkaran
+flow:
+1. 2 dikali pi dikali jari" atau
+2. pi dikali diameter
 
-  </script>
-</body>
+pseudocode:
+1. deklarasikan pi assign 3.14
+2. deklarasikan jari" assign 5
+3. deklarasika diameter assign 10 (5 * 2)
+ -->
+
+    <script>
+      var display = document.getElementById('luas');
+      var display2 = document.getElementById('keliling');
+      var r = 5;
+      var p = 3.14;
+
+      // Luas lingkaran
+      var luas = p * r * r;
+      display.innerHTML = '<p>Luas lingkaran : ' + luas.toFixed(1) + ' cm</p>';
+
+      // Keliling lingkaran
+      var keliling = 2 * p * r;
+      display2.innerHTML = '<p>Keliling lingkaran : ' + keliling.toFixed(1) + ' cm</p>';
+    </script>
+  </body>
 </html>
