@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter</title>
+</head>
+<body>
+  <h1>Counter</h1>
+  <button id="minus" onclick="pengurangan()">-</button>
+  <a id="hasil"></a>
+  <button id="plus" onclick="penambahan()">+</button>
+
+  <script>
+    var angka = 0;
+    var display = document.getElementById("hasil");
+    display.innerHTML = angka
+
+    function pengurangan() {
+      angka--
+      display.innerHTML = angka;
+    }
+    function penambahan() {
+      angka++
+      display.innerHTML = angka;
+    }
+  </script>
+</body>
+</html>
