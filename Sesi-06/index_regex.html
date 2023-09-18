@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REGEX</title>
+</head>
+<body>
+  <h1>Belajar Regex</h1>
+
+  <script>
+    var foo = "Belajar Javascript";
+    var pola = /Javascript/; //mengecek kata Javascript (true)
+    
+    console.log(pola.test(foo)); 
+    console.log(/Belajar/.test(foo)); //mengecek kata Belajar (true)
+    console.log(/belajar/.test(foo)); //mengecek kata belajar (false)
+    console.log("--------------------------------");
+
+    var too = "1 jam sama dengan 60 menit, juga sama dengan 3600 detik";
+    var search =  /\d+/g; //mencari digit pertama atau lebih tapi hanya
+                        //digit pertama yang ditampilkan karena tidak menggunakan flag /g
+
+    console.log(search.exec(too));
+    console.log("--------------------------------");
+    
+    console.log(/Javascript/.test(foo)); //mencocokan kata yang benar
+    console.log(/javascript/.test(foo));
+    console.log(/Belajar/.test(foo));
+    console.log(/belajar/.test(foo));
+    console.log(/Java/.test(foo));
+    console.log(/java/.test(foo));
+    console.log("--------------------------------");
+
+    var huruf = /[abcde]../; //mencahari awalan kata dari huruf yang di dalam kurung
+    console.log(huruf.test("abaa"));
+    console.log(huruf.test("fba"));
+    console.log(huruf.test("ldd"));
+    console.log(huruf.test("add"));
+    console.log(huruf.test("dd"));
+    console.log(huruf.test("belajar"));
+    console.log("---------------------------------");
+  </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tugas Mandiri 6</title>
+  </head>
+
+  <body>
+    <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quaerat recusandae qui ullam eaque cumque ea fugit, debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni, maiores in?</p>
+    <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quaerat recusandae qui ullam eaque cumque ea fugit, debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni, maiores in?</p>
+    <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quaerat recusandae qui ullam eaque cumque ea fugit, debitis commodi ipsum illo dolorum consequatur sed laudantium suscipit quis magni, maiores in?</p>
+
+    <script>
+      var myInterval = setInterval(() => {
+        let p1 = document.getElementsByClassName('paragraf')[0];
+        let p2 = document.getElementsByClassName('paragraf')[1];
+        let p3 = document.getElementsByClassName('paragraf')[2];
+        let color1 = p1.style.color;
+        let color2 = p2.style.color;
+        let color3 = p3.style.color;
+
+        p1.style.color = color1 == 'salmon' ? 'blue' : 'salmon';
+        p2.style.color = color2 == 'green' ? 'yellow' : 'green';
+        p3.style.color = color3 == 'grey' ? 'purple' : 'grey';
+      }, 500);
+      
+      myTimeOut = setTimeout(() => {
+        document.getElementsByClassName('paragraf')[0].style.color = 'black';
+        document.getElementsByClassName('paragraf')[1].style.color = 'black';
+        document.getElementsByClassName('paragraf')[2].style.color = 'black';
+        clearInterval(myInterval);
+      }, 5000);
+    </script>
+  </body>
+</html>
